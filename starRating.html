@@ -1,0 +1,15 @@
+<template>   
+        <lightning-card title="Rating" icon-name="standard:record">
+                <div class="slds-m-around_medium">
+
+                <lightning-button-icon-stateful icon-name="utility:favorite" size="small" selected={likeStateSize1} diabled={isDisabled} onclick={handleLikeButtonSizeClick} alternative-text="Like" data-button-number="1" ></lightning-button-icon-stateful>
+                <lightning-button-icon-stateful icon-name="utility:favorite" size="small" selected={likeStateSize2} diabled={isDisabled} onclick={handleLikeButtonSizeClick} alternative-text="Like" class="slds-m-left_xx-small" data-button-number="2" ></lightning-button-icon-stateful>
+                <lightning-button-icon-stateful icon-name="utility:favorite" size="small" selected={likeStateSize3} diabled={isDisabled} onclick={handleLikeButtonSizeClick} alternative-text="Like" class="slds-m-left_xx-small" data-button-number="3" ></lightning-button-icon-stateful>
+                <lightning-button-icon-stateful icon-name="utility:favorite" size="small" selected={likeStateSize4} diabled={isDisabled} onclick={handleLikeButtonSizeClick} alternative-text="Like" class="slds-m-left_xx-small" data-button-number="4" ></lightning-button-icon-stateful>
+                <lightning-button-icon-stateful icon-name="utility:favorite" size="small" selected={likeStateSize5} diabled={isDisabled} onclick={handleLikeButtonSizeClick} alternative-text="Like" class="slds-m-left_xx-small" data-button-number="5" ></lightning-button-icon-stateful>
+
+                <br/>
+                Corrent Rating: {currentRating}
+                </div>
+                </lightning-card>
+</template>
